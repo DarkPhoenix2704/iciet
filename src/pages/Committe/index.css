@@ -1,0 +1,15 @@
+.committe {
+    margin-inline: 36px;
+}
+.committe h1{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.committe h2{
+    font-weight: 500;
+    margin-top: 10px;
+}
+.committe hr {
+    width: 100%;
+}

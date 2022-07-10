@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Marquee from "./components/Marquee";
 import Footer from "./components/Footer";
+import Committe from "./pages/Committe";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -19,6 +20,7 @@ root.render(
         </div>
         <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="/committe" element={<Committe/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>
