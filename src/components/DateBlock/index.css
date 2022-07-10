@@ -1,0 +1,24 @@
+.dateBlock{
+    margin: 9px;
+    padding: 18px;
+    border: 1px solid #B20055;
+    min-height: 200px;
+    min-width: 300px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.dateBlock:hover{
+    background-color: #B20055;
+    color: white;
+    transform: scale(1.01);
+}
+.dateBlock h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+    margin-block-start: 18px;
+}
+.dateBlock p {
+    font-size: medium;
+    font-weight: 100;
+}

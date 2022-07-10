@@ -1,0 +1,103 @@
+.container {
+    padding-block-start: 28px;
+    margin-inline: 36px;
+    color: #1E1E1E;
+}
+.container h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.container h2 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+hr {
+    width: 70%;
+    margin-block: 20px;
+}
+.container .Btn {
+    padding-inline:18px ;
+    padding-block: 12px;
+    margin-top: 16px;
+    border: none ;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background-color: #FF4799;
+    color: white;
+}
+.container .Btn:hover {
+    background-color: #FF4799;
+    color: white;
+    transform: scale(1.01);
+}
+.about {
+    padding-block: 24px;
+    margin-block: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: #B20055;
+}
+.about p {
+    width: 50%;
+    font-size:medium;
+    text-align: justify;
+    padding-inline: 36px;
+    color: white;
+}
+.about .aboutCol {
+    display: flex;
+    padding-inline: 36px;
+    width: 100;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tracks{
+    margin-inline: 36px;
+}
+.tracks h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.tracks h2 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.tracks .trackContent {
+    margin-block: 25px;
+}
+.dates {
+    margin-inline:36px;
+}
+.dates h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.dates h2 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.dates .dateContent {
+    margin-block: 45px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width:890px){
+    .about {
+        flex-direction: column;
+        display: flex;
+    }
+    .about p {
+        margin-top: 26px;
+        width: 100%;
+    }
+    .about .aboutCol {
+        width: 90%;
+        margin-block: 48px;
+    }
+}
