@@ -20,6 +20,9 @@ nav .navBarLinks {
 nav .navBarLinks .navBarItem {
     text-decoration: none;
     text-underline-offset: 3px;
+    color: #ECEEF5;
+    font-size: 16px;
+    border: none;
     transition: all 0.8s ease-in;
     margin-inline: 18px;
     color: #1E1E1E;
@@ -31,6 +34,34 @@ nav .menu {
     font-size: 1.1em;
     display: none;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .navBarDropItem {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content .navBarDropItem:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 @media only screen and (max-width:890px){
     nav .navBarLinks{
         display: none;

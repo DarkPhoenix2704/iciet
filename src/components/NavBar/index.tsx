@@ -2,13 +2,27 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Menu } from "react-feather";
 import "./index.css";
-export default NavBar => {
+const NavBar = () => {
     return (
         <nav>
             <div className="navBarLinks">
                 <NavLink className="navBarItem" to="/">HOME</NavLink>
-                <NavLink className="navBarItem" to="/about">ABOUT</NavLink>
-                <NavLink className="navBarItem" to="/">AUTHORS</NavLink>
+                <div className="dropdown">
+                    <button className="navBarItem">ABOUT
+                    </button>
+                    <div className="dropdown-content">
+                        <NavLink className="navBarDropItem" to="/venue">VENUE</NavLink>
+                        <NavLink className="navBarDropItem" to="/accomodation">ACCOMODATION</NavLink>
+                    </div>    
+                </div>
+                <div className="dropdown">
+                    <button className="navBarItem">AUTHORS
+                    </button>
+                    <div className="dropdown-content">
+                        <NavLink className="navBarDropItem" to="/papers">CALL FOR PAPERS</NavLink>
+                        <NavLink className="navBarDropItem" to="/submission">SUBMISSION</NavLink>
+                    </div>    
+                </div>
                 <NavLink className="navBarItem" to="/committe">COMMITTE</NavLink>
                 <NavLink className="navBarItem" to="/registration">REGISTRATION</NavLink>
                 <NavLink className="navBarItem" to="/contact">CONTACT</NavLink>
@@ -21,4 +35,5 @@ export default NavBar => {
             </div>
         </nav>
     );
-}
+;}
+export default NavBar;
