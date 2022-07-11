@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import Marquee from "./components/Marquee";
 import Footer from "./components/Footer";
 import Committe from "./pages/Committe";
+import Contact from "./pages/Contact";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -21,6 +22,7 @@ root.render(
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/committe" element={<Committe/>}/>
+            <Route path="/contact" element={<Contact/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>
