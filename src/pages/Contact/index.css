@@ -1,0 +1,43 @@
+.contactPage{
+    margin-inline: 36px;
+    padding-block-start: 18px;
+}
+.contactPage h1{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.contactPage h2{
+    font-weight: 400;
+}
+.contactPage hr {
+    width: 70%;
+}
+.contactPage .row1 {
+
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-block: 72px;
+}
+.contactPage .row2 {
+    flex-wrap: wrap;
+    margin-block: 64px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.contactPage .row2 p {
+    margin-block: 18px;
+    margin-inline: 72px;
+}
+@media only screen and (max-width:890px){
+    .contactPage .row1 {
+        margin-block: 36px;
+    }
+    .contactPage .row2 {
+        margin-block: 24px;
+    }
+}

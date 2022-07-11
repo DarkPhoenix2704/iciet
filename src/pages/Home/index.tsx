@@ -4,22 +4,9 @@ import iciet from "../../assets/ICIET_Logo_White.svg";
 import Track from "../../components/Track";
 import DateBlock from "../../components/DateBlock";
 import { NavLink } from "react-router-dom";
+import dates from "../../data/dates";
+import tracks from "../../data/tracks";
 const Home = () => {
-    const tracks = [
-        "Artificial Intelligence & Data Science",
-        "IOT and its Applications",
-        "Sustainable & Enviornmental Engineering",
-        "Web3 & Blockchain",
-        "Communication & Signal Processing",
-        "Advanced materials and Methods in Structural engineering",
-        "Power Electronics and Applications",
-    ];
-    const dates = [
-        {date: 17, month: "August 2022", content: "Call for Papers"},
-        {date: 12, month: "October 2022", content: "Draft Paper Submission"},
-        {date: 9, month: "November 2022", content: "Notification of Acceptance"},
-        {date: 7, month: "December", content: "Camera Ready"}
-    ];
     return(
         <>
             <div className="container">
@@ -47,7 +34,7 @@ const Home = () => {
                 <hr/>
                 <div className="trackContent">
                     {
-                        tracks.map(val => <Track content={val}/>)
+                        tracks.map((val,key) => <Track content={val} key={key}/>)
                     }
                 </div>
             </div>
@@ -57,7 +44,7 @@ const Home = () => {
                 <hr/>
                 <div className="dateContent">
                     {
-                        dates.map(val => <DateBlock date={val.date} month={val.month} content={val.content}/>)
+                        dates.map((val,key) => <DateBlock key={key} date={val.date} month={val.month} content={val.content}/>)
                     }
                 </div>
             </div>
