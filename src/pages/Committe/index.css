@@ -1,5 +1,6 @@
 .committe {
     margin-inline: 36px;
+    padding-block-start: 18px;
 }
 .committe h1{
     font-size: xx-large;
@@ -7,9 +8,15 @@
     margin-inline: 0;
 }
 .committe h2{
-    font-weight: 500;
-    margin-top: 10px;
+    font-weight: 400;
 }
 .committe hr {
-    width: 100%;
+    width: 70%;
+}
+.committe .usersContainer {
+    margin-block: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

@@ -1,0 +1,37 @@
+.userCard{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    align-items: center;
+    margin-block: 18px;
+}
+.userCard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.userCard .userTexts {
+    margin-inline: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.userCard .userTexts h2 {
+    font-weight: 500;
+}
+.userCard .userTexts h3 {
+    font-size: medium;
+    font-weight: 400;
+}
+@media only screen and (max-width:890px){
+    .userCard img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .userCard .userTexts {
+        margin-inline: 5px;
+    }
+}
