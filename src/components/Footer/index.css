@@ -7,7 +7,6 @@
 }
 .footer .row{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -28,4 +27,18 @@
 .footer .rowCol{
     padding-block-start: 9px;
     text-align: center;
+}
+@media only screen and (max-width:890px){
+    .footer .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .row img {
+        width: 100%;
+    }
+    .footer .row .column {
+        margin-block: 18px;
+        align-items: center;
+    }
 }
