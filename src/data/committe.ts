@@ -38,7 +38,7 @@ const committe = [
         "role": "Conference General Co-Chair",
         "members": [
             {
-                "name" : "Prod. Rosna P Haroon",
+                "name" : "Prof. Rosna P Haroon",
                 "role" : "Asst. Professor(CSE), Coordinator"
             },
             {

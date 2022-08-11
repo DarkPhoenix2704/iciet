@@ -69,6 +69,7 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = "production";
+        config.optimization = {splitChunks:{chunks:'all'}};
         config.plugins.push(new MiniCssExtractPlugin({filename: "bundle.[contenthash].css"}));        
     } else {
         config.mode = "development";
