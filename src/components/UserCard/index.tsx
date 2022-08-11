@@ -12,4 +12,5 @@ const UserCard = (props) => {
         </div>
     );
 };
+
 export default UserCard;

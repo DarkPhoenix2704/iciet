@@ -1,3 +1,4 @@
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React from "react";
 import "./index.css";
 const Venue = () => {
@@ -46,6 +47,13 @@ const Venue = () => {
                     Inculcating professional ethics, critical thinking mind and positive attitude of lifelong learning.
                 </li>
             </ul>
+            <LoadScript googleMapsApiKey="AIzaSyAcVUpjSZSb2og3l7K6v6enQCLYdCSCIHM">
+                <div className="mapComponent">
+                    <GoogleMap mapContainerStyle={{width: "100%", height:"100%"}} center={{lat:10.028339,lng:76.597629}} zoom={15}>
+                        <Marker position={{lat:10.028339,lng:76.597629}}/>
+                    </GoogleMap>
+                </div>
+            </LoadScript>
         </div>
     );
 };
