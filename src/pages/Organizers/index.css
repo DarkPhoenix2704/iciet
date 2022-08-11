@@ -1,0 +1,39 @@
+.organizers{
+    margin-inline: 36px;
+    padding-block-start: 18px;
+}
+.organizers h1{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.organizers h2{
+    font-weight: 400;
+}
+.organizers hr {
+    width: 70%;
+}
+.organizers .row{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+.organizers .row img {
+    width: 50%;
+}
+.organizers .row p {
+    padding-left: 15px;
+    line-height: 2;
+}
+@media only screen and (max-width:890px){
+    .organizers .row img {
+        width: 100%;
+    }
+    .organizers .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .organizers .row p {
+        padding: 0px;
+    }
+}

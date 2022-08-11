@@ -11,6 +11,7 @@ const NavBar = () => {
                     <button className="navBarItem">ABOUT
                     </button>
                     <div className="dropdown-content">
+                        <NavLink className="navBarDropItem" to="/organizers">ORGANIZERS</NavLink>
                         <NavLink className="navBarDropItem" to="/venue">VENUE</NavLink>
                         <NavLink className="navBarDropItem" to="/accomodation">ACCOMODATION</NavLink>
                     </div>    

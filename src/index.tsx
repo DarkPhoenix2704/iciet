@@ -14,6 +14,7 @@ import CallForPaper from "./pages/CallForPaper";
 import ImportantDates from "./pages/ImportantDates";
 import Submission from "./pages/Submission";
 import Registraton from "./pages/Registration";
+import Organizers from "./pages/Organizers";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -33,6 +34,7 @@ root.render(
             <Route path="/dates" element={<ImportantDates/>}/>
             <Route path="/submission" element={<Submission/>}/>
             <Route path="/registration" element={<Registraton/>}/>
+            <Route path="/organizers" element={<Organizers/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>
