@@ -1,0 +1,30 @@
+.registration{
+    margin-inline: 36px;
+    padding-block-start: 18px;
+}
+.registration h1{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.registration h2{
+    font-weight: 400;
+}
+
+.registration hr {
+    width: 70%;
+}
+.registration table {
+    width: 100%;
+    margin-block: 18px;
+    border-collapse: collapse;
+}
+.registration table th{
+    padding: 5px;
+}
+
+.registration table td{
+    text-align: center;
+    padding-inline: 5px;
+    padding-block: 5px;
+}

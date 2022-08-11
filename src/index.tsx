@@ -11,6 +11,9 @@ import Committe from "./pages/Committe";
 import Contact from "./pages/Contact";
 import Venue from "./pages/Venue";
 import CallForPaper from "./pages/CallForPaper";
+import ImportantDates from "./pages/ImportantDates";
+import Submission from "./pages/Submission";
+import Registraton from "./pages/Registration";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -27,6 +30,9 @@ root.render(
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/venue" element={<Venue/>}/>
             <Route path="/papers" element={<CallForPaper/>}/>
+            <Route path="/dates" element={<ImportantDates/>}/>
+            <Route path="/submission" element={<Submission/>}/>
+            <Route path="/registration" element={<Registraton/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>

@@ -21,6 +21,7 @@ const NavBar = () => {
                     <div className="dropdown-content">
                         <NavLink className="navBarDropItem" to="/papers">CALL FOR PAPERS</NavLink>
                         <NavLink className="navBarDropItem" to="/submission">SUBMISSION</NavLink>
+                        <NavLink className="navBarDropItem" to="/dates">IMPORTANT DATES</NavLink>
                     </div>    
                 </div>
                 <NavLink className="navBarItem" to="/committe">COMMITTE</NavLink>

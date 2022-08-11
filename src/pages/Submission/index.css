@@ -1,0 +1,13 @@
+.submission{
+    margin-inline: 36px;
+    padding-block-start: 18px;
+}
+.submission h1{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+
+.submission hr {
+    width: 70%;
+}
