@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Committe from "./pages/Committe";
 import Contact from "./pages/Contact";
 import Venue from "./pages/Venue";
+import CallForPaper from "./pages/CallForPaper";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -25,6 +26,7 @@ root.render(
             <Route path="/committe" element={<Committe/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/venue" element={<Venue/>}/>
+            <Route path="/papers" element={<CallForPaper/>}/>
         </Routes>
         <Footer/>
     </BrowserRouter>

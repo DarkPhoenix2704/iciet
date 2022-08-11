@@ -1,0 +1,30 @@
+.callForPaper {
+    margin-inline: 36px;
+    margin-block: 28px;
+}
+.callForPaper img {
+    width: 100%;
+}
+.callForPaper .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.callForPaper .buttons button {
+    padding-inline:18px;
+    border-radius: 5px;
+    border: solid 1px #B20055;
+    color: white;
+    background-color: #B20055;
+    padding-block: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.callForPaper .buttons button:hover {
+    color: #B20055;
+    background: white;
+}
+@media only screen and (max-width:890px) {
+    .callForPaper {
+        margin-inline: 18px;
+    }
+}
