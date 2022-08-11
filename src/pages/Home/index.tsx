@@ -17,7 +17,7 @@ const Home = () => {
             </div>
             <div className="about">
                 <p>
-                ICIET-2023 is the International Conference organized by Ilahia College of Engineering 
+                ICIET-2022 is the International Conference organized by Ilahia College of Engineering 
                 and Technology, Muvattupuzha, Kerala, India. This Conference aims to bring together the 
                 Researchers, Academicians and Industrialist under a single platform to share their 
                 knowledge and research experience so as to provide directions for future reasearch. 
@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             <div className="tracks">
                 <h1>Conference Tracks</h1>
-                <h2>ICIET 2023 will have the following tracks:</h2>
+                <h2>ICIET 2022 will have the following tracks:</h2>
                 <hr/>
                 <div className="trackContent">
                     {
