@@ -23,11 +23,11 @@ hr {
     border: none ;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
-    background-color: #FF4799;
+    background-color: #B20055;
     color: white;
 }
 .container .Btn:hover {
-    background-color: #FF4799;
+    background-color: #B20055;
     color: white;
     transform: scale(1.01);
 }

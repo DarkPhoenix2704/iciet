@@ -1,0 +1,27 @@
+.accomodation{
+    margin-inline: 36px;
+    padding-block-start: 18px;
+}
+.accomodation h1{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-inline: 0;
+}
+.accomodation h2{
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.accomodation hr {
+    width: 70%;
+}
+.accomodation .airportRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media only screen and (max-width:890px) {
+    .accomodation .airportRow img{
+        width: 100%;
+    }
+}

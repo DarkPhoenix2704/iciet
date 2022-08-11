@@ -1,7 +1,31 @@
 .footer {
-    height: 50px;
-    background-color: #B20055;
+    margin-top: 18px;
+    padding-inline: 18px;
+    padding-block: 18px;
     color: #fff;
-    line-height: 50px;
+    background-color: #B20055;
+}
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer .row .column{
+    display: flex;
+    flex-direction: column;
+    width: 25ch;
+}
+
+.footer .row .column .link {
+    color: white;
+    text-decoration: none;
+}
+.footer .row .column a {
+    text-decoration: none;
+    color: #fff;
+}
+.footer .rowCol{
+    padding-block-start: 9px;
     text-align: center;
 }

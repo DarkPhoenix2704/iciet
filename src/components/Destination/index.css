@@ -1,0 +1,13 @@
+.destCard{
+    border: solid 1px #d1d1d1;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+.destCard img {
+    height:250px;
+}
+.destCard .link {
+    text-decoration: none;
+    color: #525252;
+}
