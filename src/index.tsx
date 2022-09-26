@@ -23,6 +23,7 @@ const root = createRoot(container);
 
 root.render(
     <BrowserRouter>
+        <React.Suspense fallback={<>Loading</>}>
         <div className="header">
             <img src={header} width="100%" />
             <NavBar/>
@@ -41,5 +42,6 @@ root.render(
             <Route path="/accomodation" element={<Accomodation/>}/>
         </Routes>
         <Footer/>
+        </React.Suspense>
     </BrowserRouter>
 );
