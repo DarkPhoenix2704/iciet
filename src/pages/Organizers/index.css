@@ -22,6 +22,7 @@
     width: 50%;
 }
 .organizers .row p {
+    font-size: 14px;
     padding-left: 15px;
     line-height: 2;
 }

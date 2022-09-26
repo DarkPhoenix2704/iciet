@@ -1,6 +1,6 @@
 .mContainer {
     height: 55px;
-    background-color: #B20055;
+    background-color: var(--accent);
     overflow: hidden;
     position: relative;
 }

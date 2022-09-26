@@ -44,12 +44,12 @@ nav .menu {
     padding-block: 3px;
     padding-inline: 5px;
     border-radius: 2px;
-    border: #B20055 solid 1px;
+    border: var(--accent) solid 1px;
     margin-bottom: 4px;
     text-decoration: none;
 }
 .mobileNav .mobileNavItem:hover {
-    background-color: #B20055;
+    background-color: var(--accent);
     color: white;
 }
 .dropdown-content {

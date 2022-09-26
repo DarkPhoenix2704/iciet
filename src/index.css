@@ -8,3 +8,7 @@
 .header{
     background-color: #ECEEF5;
 }
+:root {
+    --accent: #24275F;
+    --white: #ffffff;
+  }

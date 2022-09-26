@@ -13,14 +13,14 @@
 .callForPaper .buttons button {
     padding-inline:18px;
     border-radius: 5px;
-    border: solid 1px #B20055;
+    border: solid 1px var(--accent);
     color: white;
-    background-color: #B20055;
+    background-color: var(--accent);
     padding-block: 12px;
     transition: all 0.3s ease-in-out;
 }
 .callForPaper .buttons button:hover {
-    color: #B20055;
+    color: var(--accent);
     background: white;
 }
 @media only screen and (max-width:890px) {

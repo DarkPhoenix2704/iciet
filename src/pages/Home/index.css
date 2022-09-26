@@ -23,11 +23,11 @@ hr {
     border: none ;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
-    background-color: #B20055;
+    background-color: var(--accent);
     color: white;
 }
 .container .Btn:hover {
-    background-color: #B20055;
+    background-color: var(--accent);
     color: white;
     transform: scale(1.01);
 }
@@ -36,7 +36,7 @@ hr {
     margin-block: 40px;
     display: flex;
     flex-direction: row;
-    background-color: #B20055;
+    background-color: var(--accent);
 }
 .about p {
     width: 50%;

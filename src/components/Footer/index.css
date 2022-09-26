@@ -3,7 +3,7 @@
     padding-inline: 18px;
     padding-block: 18px;
     color: #fff;
-    background-color: #B20055;
+    background-color: var(--accent);
 }
 .footer .row{
     display: flex;
