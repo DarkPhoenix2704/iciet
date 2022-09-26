@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Menu } from "react-feather";
 import "./index.css";
 const NavBar = () => {
-    const ref = useRef();
+    const ref = useRef<any>();
     return (
         <>
             <nav>
@@ -32,7 +32,7 @@ const NavBar = () => {
                     <NavLink className="navBarItem" to="/contact">CONTACT</NavLink>
                 </div>
                 <div className="menu" onClick={ () => {
-                    ref.current.style.display === "none" ? ref.current.style.display = "flex" : ref.current.style.display = "none"
+                    ref?.current?.style.display === "none" ? ref.current.style.display = "flex" : ref.current.style.display = "none"
                 }}>
                     <p>
                         MENU

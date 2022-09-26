@@ -8,7 +8,7 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : "style-loader";
 
 const config = {
-    entry: path.resolve(__dirname, "./src/index.tsx"),
+    entry: "./src/index.tsx",
     output: {
         path: path.resolve(__dirname, "build"),
         filename: "bundle.[contenthash].js"
@@ -32,17 +32,9 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.(ts|js)x?$/,
+                test: /\.(ts|ts)x?$/,
                 loader: "ts-loader",
                 exclude: ["/node_modules/"],
-            },
-            {
-                test: /\.html$/,
-                use: [
-                    {
-                        loader: "html-loader"
-                    }
-                ]
             },
             {
                 test: /\.css$/i,
@@ -50,7 +42,7 @@ const config = {
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|pdf)$/i,
-                type: "asset/resource",
+                type: "asset",
             },
             {
                 test: /\.js$/,
