@@ -1,10 +1,12 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == "production";
-
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : "style-loader";
+
 const config = {
     entry: path.resolve(__dirname, "./src/index.tsx"),
     output: {
@@ -14,8 +16,7 @@ const config = {
     devServer: {
         open: true,
         historyApiFallback: true, 
-        host: "localhost",
-        watchFiles:["./src/**/**/**/**/*.{js,jsx,ts,tsx,css}"]
+        port: 3000,
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -32,10 +33,7 @@ const config = {
         rules: [
             {
                 test: /\.(ts|js)x?$/,
-                loader: "babel-loader",
-                options: {
-                    include: path.resolve(__dirname, "./src")
-                },
+                loader: "ts-loader",
                 exclude: ["/node_modules/"],
             },
             {
@@ -69,7 +67,8 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = "production";
-        config.optimization = {splitChunks:{chunks:'all'}};
+        config.optimization = {splitChunks:{chunks:'all'}, minimize: true, minimizer: [new TerserPlugin()]};
+        config.plugins.push(new CleanWebpackPlugin());
         config.plugins.push(new MiniCssExtractPlugin({filename: "bundle.[contenthash].css"}));        
     } else {
         config.mode = "development";

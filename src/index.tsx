@@ -3,19 +3,21 @@ import "./index.css"
 import { createRoot } from "react-dom/client";
 import header from "./assets/Header.svg";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Marquee from "./components/Marquee";
-import Footer from "./components/Footer";
-import Committe from "./pages/Committe";
-import Contact from "./pages/Contact";
-import Venue from "./pages/Venue";
-import CallForPaper from "./pages/CallForPaper";
-import ImportantDates from "./pages/ImportantDates";
-import Submission from "./pages/Submission";
-import Registraton from "./pages/Registration";
-import Organizers from "./pages/Organizers";
-import Accomodation from "./pages/Accomodation";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const Footer = React.lazy(() => import("./components/Footer"));
+const Committe = React.lazy(() => import("./pages/Committe"));
+const Contact = React.lazy(() => import("./pages/Contact"));
+const Venue = React.lazy(() => import("./pages/Venue"));
+const CallForPaper = React.lazy(() => import("./pages/CallForPaper"));
+const ImportantDates = React.lazy(() => import("./pages/ImportantDates"));
+const Submission = React.lazy(() => import("./pages/Submission"));
+const Registration = React.lazy(() => import("./pages/Registration"));
+const Organizers = React.lazy(() => import("./pages/Organizers"));
+const Accomodation = React.lazy(() => import("./pages/Accomodation"));
+
 const container = document.getElementById("root");
 const root = createRoot(container);
 
@@ -34,7 +36,7 @@ root.render(
             <Route path="/papers" element={<CallForPaper/>}/>
             <Route path="/dates" element={<ImportantDates/>}/>
             <Route path="/submission" element={<Submission/>}/>
-            <Route path="/registration" element={<Registraton/>}/>
+            <Route path="/registration" element={<Registration/>}/>
             <Route path="/organizers" element={<Organizers/>}/>
             <Route path="/accomodation" element={<Accomodation/>}/>
         </Routes>

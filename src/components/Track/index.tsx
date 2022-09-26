@@ -1,10 +1,13 @@
 import React from "react";
 import "./index.css";
-const Track = (props) => {
+const Track = ({content}: TrackProps) => {
     return (
         <div className="trackBody">
-            {props.content}
+            {content}
         </div>
     );
+}
+interface TrackProps{
+    content: string;
 }
 export default Track;
